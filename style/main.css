@@ -1,0 +1,91 @@
+.main_movie{
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/img/superbad_poster.jpg');
+
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title{
+  margin-top: 5%;
+}
+
+.main_movie .description{
+  margin: 2% 0;
+}
+
+.button{
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  width: 50%;
+  color: var(--white);
+  padding: 0.8rem 1rem;
+  margin: 0.8rem 0.8rem 0 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+  background-color: var(--white);
+  color: var(--black);
+
+}
+
+.button i{
+  margin-right: 0.2rem;
+}
+
+.container{
+  margin-left: 1.25rem;
+}
+
+.main_movie .container{
+  width: 70%;
+}
+
+.box-film{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel_movies{
+  margin-top: 0.2rem;
+  box-shadow: 1px -1px 22px 6px rgba(0,0,0,0.76);
+}
+
+@media screen and (max-width: 700px){
+  header .container{
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    gap: 1rem;
+    margin: 0 0 1rem 0;
+  }
+  .button{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 1000px){
+  .description{
+    width: 50%;
+  }
+}

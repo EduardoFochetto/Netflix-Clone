@@ -1,0 +1,61 @@
+:root{
+  --red: #E50914;
+  --black: #141414;
+  --white: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+
+h3{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+body{
+  background: var(--black);
+  font-family: 'Roboto', sans-serif;
+  color:var(--white);
+}
+
+header .container{
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+header > .container > h2 {
+  font-family: 'Bebas Neue', cursive;
+  color: var(--red)
+}
+
+nav{
+  display: flex;
+  gap: 2rem;
+  margin-right: 1.25rem;
+}
+
+nav > a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav > a:hover{
+  text-shadow: 2px 0px 8px var(--white);
+}
